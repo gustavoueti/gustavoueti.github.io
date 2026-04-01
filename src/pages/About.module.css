@@ -1,0 +1,66 @@
+.page {
+  max-width: var(--line-width);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.mascot {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.hero h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.3rem;
+}
+
+.tagline {
+  font-size: 0.875rem;
+  color: var(--color-accent);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.page p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
+}
+
+.links {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  background: var(--color-accent-dim);
+  border: 1px solid rgba(103, 232, 249, 0.2);
+  padding: 0.45em 1em;
+  border-radius: 6px;
+  transition: background 0.15s, border-color 0.15s;
+  text-decoration: none;
+}
+
+.links a:hover {
+  background: rgba(103, 232, 249, 0.2);
+  border-color: rgba(103, 232, 249, 0.4);
+  opacity: 1;
+  text-decoration: none;
+}

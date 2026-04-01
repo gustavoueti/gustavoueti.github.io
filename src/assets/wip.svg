@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" fill="none">
+
+  <!-- Card -->
+  <rect x="40" y="16" width="400" height="288" rx="20" fill="#160823" stroke="#2d1b4e" stroke-width="1.5"/>
+
+  <!-- ── Hard hat ── -->
+  <ellipse cx="240" cy="106" rx="60" ry="10" fill="#fbbf24"/>
+  <path d="M180 106 Q180 58 240 58 Q300 58 300 106 Z" fill="#f59e0b"/>
+  <rect x="172" y="100" width="136" height="14" rx="7" fill="#fbbf24"/>
+
+  <!-- ── Body ── -->
+  <ellipse cx="240" cy="248" rx="52" ry="40" fill="#b8865a"/>
+
+  <!-- ── Head ── -->
+  <!-- Round head -->
+  <circle cx="240" cy="168" r="52" fill="#b8865a"/>
+
+  <!-- Muzzle — define a capivara: largo e plano -->
+  <rect x="204" y="176" width="72" height="34" rx="16" fill="#d4a06a"/>
+
+  <!-- Ears -->
+  <ellipse cx="200" cy="130" rx="14" ry="11" fill="#9a6540"/>
+  <ellipse cx="280" cy="130" rx="14" ry="11" fill="#9a6540"/>
+
+  <!-- Eyes — grandes e simples -->
+  <circle cx="224" cy="158" r="10" fill="white"/>
+  <circle cx="256" cy="158" r="10" fill="white"/>
+  <circle cx="226" cy="159" r="6" fill="#1a0a2e"/>
+  <circle cx="258" cy="159" r="6" fill="#1a0a2e"/>
+  <circle cx="228" cy="157" r="2.5" fill="white"/>
+  <circle cx="260" cy="157" r="2.5" fill="white"/>
+
+  <!-- Nostrils -->
+  <ellipse cx="228" cy="197" rx="5" ry="4" fill="#7a4820" opacity="0.6"/>
+  <ellipse cx="252" cy="197" rx="5" ry="4" fill="#7a4820" opacity="0.6"/>
+
+  <!-- Dentes (marca da capivara) -->
+  <rect x="232" y="204" width="8" height="9" rx="2" fill="#fffbe6"/>
+  <rect x="242" y="204" width="8" height="9" rx="2" fill="#fffbe6"/>
+
+  <!-- Arms -->
+  <ellipse cx="188" cy="235" rx="18" ry="12" fill="#9a6540"/>
+  <ellipse cx="292" cy="235" rx="18" ry="12" fill="#9a6540"/>
+
+  <!-- ── Wrench — ciano ── -->
+  <g transform="translate(152,228) rotate(-30)">
+    <rect x="-18" y="-4" width="36" height="8" rx="4" fill="#67e8f9"/>
+    <circle cx="-18" cy="0" r="8" fill="none" stroke="#67e8f9" stroke-width="4"/>
+  </g>
+
+  <!-- ── Gear — ciano ── -->
+  <g transform="translate(328,230)">
+    <circle cx="0" cy="0" r="11" fill="none" stroke="#67e8f9" stroke-width="4"/>
+    <circle cx="0" cy="0" r="4" fill="#67e8f9"/>
+    <rect x="-3.5" y="-16" width="7" height="6" rx="1.5" fill="#67e8f9"/>
+    <rect x="-3.5" y="10" width="7" height="6" rx="1.5" fill="#67e8f9"/>
+    <rect x="-16" y="-3.5" width="6" height="7" rx="1.5" fill="#67e8f9"/>
+    <rect x="10" y="-3.5" width="6" height="7" rx="1.5" fill="#67e8f9"/>
+  </g>
+
+  <!-- Text -->
+  <text x="240" y="280" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#f0e8ff">Em construção</text>
+  <text x="240" y="297" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10.5" fill="#9d8cbd">Volte em breve!</text>
+
+</svg>
