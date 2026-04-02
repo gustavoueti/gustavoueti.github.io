@@ -11,7 +11,7 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={`container ${styles.heroInner}`}>
           <div className={styles.heroText}>
-            <h1 className={styles.heroTitle}>uetistack.dev</h1>
+            <h1 className={styles.heroTitle}>Ueti Stack</h1>
             <p className={styles.heroSub}>
               A data engineer writing about pipelines, data, and the things
               he picks up along the way — including how to make this blog work.
