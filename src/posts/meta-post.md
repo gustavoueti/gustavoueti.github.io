@@ -3,7 +3,7 @@ title: "Meta Post: Everything about this project"
 date: "2026-04-01"
 slug: "meta-post"
 tags: ["blog", "first-post"]
-excerpt: "I spend my days thinking about pipelines and data. This blog was born out of curiosity about the other side — how the web actually works."
+excerpt: "Who I am, why I built this, and the stack behind it — all in one post."
 published: true
 ---
 
