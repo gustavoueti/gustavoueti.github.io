@@ -1,4 +1,4 @@
-import capybara from '../assets/capybara.png'
+import capybara from '../../assets/capybara.png'
 import styles from './About.module.css'
 
 export default function About() {

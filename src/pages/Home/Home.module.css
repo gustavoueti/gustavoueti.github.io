@@ -1,0 +1,81 @@
+/* ── Hero ─────────────────────────────────────────────── */
+.hero {
+  border-bottom: 1px solid var(--color-border);
+  padding-block: var(--spacing-xl);
+  background: linear-gradient(
+    160deg,
+    var(--color-surface) 0%,
+    var(--color-bg) 100%
+  );
+}
+
+.heroInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+}
+
+.heroText {
+  flex: 1;
+  min-width: 0;
+}
+
+.heroTitle {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.heroTitle span {
+  color: var(--color-accent);
+}
+
+.heroSub {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  max-width: 42ch;
+}
+
+.heroImage {
+  width: 240px;
+  height: auto;
+  flex-shrink: 0;
+  filter: drop-shadow(0 8px 32px rgba(103, 232, 249, 0.15));
+}
+
+/* ── Posts section ────────────────────────────────────── */
+.heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-block: var(--spacing-lg) var(--spacing-md);
+}
+
+.empty {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+/* ── Mobile ───────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .heroInner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .heroSub {
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .heroImage {
+    width: 180px;
+  }
+}

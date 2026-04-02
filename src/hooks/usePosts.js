@@ -35,10 +35,15 @@ export function usePosts() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    loadAllPosts().then((data) => {
-      setPosts(data)
-      setLoading(false)
-    })
+    loadAllPosts()
+      .then((data) => {
+        setPosts(data)
+        setLoading(false)
+      })
+      .catch((err) => {
+        console.error('Erro ao carregar posts:', err)
+        setLoading(false)
+      })
   }, [])
 
   return { posts, loading }

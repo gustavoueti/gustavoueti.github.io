@@ -1,8 +1,9 @@
 import { useParams, Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import { usePost } from '../hooks/usePosts'
-import { formatDate } from '../utils/formatDate'
+import rehypeRaw from 'rehype-raw'
+import { usePost } from '../../hooks/usePosts'
+import { formatDate } from '../../utils/formatDate'
 import styles from './Post.module.css'
 
 export default function Post() {
@@ -50,7 +51,7 @@ export default function Post() {
           </div>
         </header>
         <div className={styles.prose}>
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>{post.content}</ReactMarkdown>
         </div>
       </article>
     </div>
