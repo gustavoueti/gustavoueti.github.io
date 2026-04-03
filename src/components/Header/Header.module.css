@@ -9,9 +9,17 @@
   padding-block: var(--spacing-sm);
 }
 
-@media (prefers-color-scheme: light) {
-  .header {
-    background: rgba(250, 245, 255, 0.85);
+:global([data-theme="light"]) .header {
+  background: rgba(245, 240, 255, 0.85);
+}
+
+:global([data-theme="system"]) .header {
+  background: rgba(245, 240, 255, 0.85);
+}
+
+@media (prefers-color-scheme: dark) {
+  :global([data-theme="system"]) .header {
+    background: rgba(13, 4, 21, 0.85);
   }
 }
 
@@ -87,8 +95,14 @@
 
 .navList {
   display: flex;
+  align-items: center;
   gap: var(--spacing-md);
   list-style: none;
+}
+
+.navList li {
+  display: flex;
+  align-items: center;
 }
 
 .navList a {
@@ -96,12 +110,31 @@
   font-weight: 500;
   color: var(--color-text-muted);
   transition: color 0.15s;
+  display: flex;
+  align-items: center;
+  line-height: 1;
 }
 
 .navList a:hover {
   color: var(--color-text);
   text-decoration: none;
   opacity: 1;
+}
+
+/* ── Theme button ─────────────────────────────────────── */
+.themeBtn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  padding: 0;
+  transition: color 0.15s;
+}
+
+.themeBtn:hover {
+  color: var(--color-text);
 }
 
 /* ── Mobile ───────────────────────────────────────────── */
@@ -134,5 +167,10 @@
 
   .navList a {
     font-size: 1rem;
+  }
+
+  .search {
+    width: 10%;
+    height: 90%;
   }
 }
