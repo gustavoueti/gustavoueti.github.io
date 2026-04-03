@@ -22,15 +22,6 @@ export default function About() {
         <p>
           No grand editorial plan. No posting schedule. Just voices from my head.
         </p>
-
-        <div className={styles.links}>
-          <a href="https://github.com/gustavoueti" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-          <a href="https://linkedin.com/in/gustavoueti" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-        </div>
       </div>
     </div>
   )
