@@ -34,19 +34,34 @@
   --glow-accent: 0 0 20px rgba(103, 232, 249, 0.2);
 }
 
-/* ── Light mode override ──────────────────────────────── */
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-bg:           #faf5ff;
-    --color-surface:      #f3e8ff;
-    --color-surface-2:    #ede9fe;
-    --color-text:         #1a0a2e;
-    --color-text-muted:   #6b4f8a;
-    --color-accent:       #0891b2;
-    --color-accent-dim:   rgba(8, 145, 178, 0.1);
-    --color-border:       #ddd6fe;
-    --color-border-soft:  rgba(0, 0, 0, 0.06);
-    --glow-accent:        none;
+/* ── Light mode tokens ────────────────────────────────── */
+:root[data-theme="light"],
+:root[data-theme="system"] {
+  --color-bg:           #d8d5e0;
+  --color-surface:      #cfc9d8;
+  --color-surface-2:    #c5bed0;
+  --color-text:         #1a0a2e;
+  --color-text-muted:   #6b4f8a;
+  --color-accent:       #0891b2;
+  --color-accent-dim:   rgba(8, 145, 178, 0.1);
+  --color-border:       #c4a8ef;
+  --color-border-soft:  rgba(103, 0, 200, 0.08);
+  --glow-accent:        none;
+}
+
+/* system: só aplica light se o SO estiver em light */
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="system"] {
+    --color-bg:           #0d0415;
+    --color-surface:      #160823;
+    --color-surface-2:    #1e0d30;
+    --color-text:         #f0e8ff;
+    --color-text-muted:   #9d8cbd;
+    --color-accent:       #67e8f9;
+    --color-accent-dim:   rgba(103, 232, 249, 0.12);
+    --color-border:       #2d1b4e;
+    --color-border-soft:  rgba(255, 255, 255, 0.06);
+    --glow-accent:        0 0 20px rgba(103, 232, 249, 0.2);
   }
 }
 
