@@ -2,6 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // Restore route encoded by 404.html redirect workaround.
+      ;(function () {
+        var search = window.location.search
+        if (search.indexOf('?p=') === 0 || search.indexOf('&p=') !== -1) {
+          var params = new URLSearchParams(search)
+          var path = params.get('p')
+          var hash = params.get('h') || ''
+          if (path) {
+            window.history.replaceState(null, null, path + hash)
+          }
+        }
+      })()
+    </script>
     <link rel="icon" type="image/png" href="/capy-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="A data engineer writing about pipelines, data, and the things he picks up along the way." />
@@ -16,7 +30,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/assets/index-Dk3iejb_.js"></script>
+    <script type="module" crossorigin src="/assets/index-maHVPXD_.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-oY8RQetf.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-markdown-COkGIBeo.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-mui-Coj13DcF.js">
     <link rel="stylesheet" crossorigin href="/assets/index-B2owOK2e.css">
   </head>
   <body>

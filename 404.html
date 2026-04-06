@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // GitHub Pages SPA redirect workaround.
+      // When a user navigates directly to a deep route (e.g. /post/slug),
+      // GitHub Pages serves this 404.html. We encode the path as a query
+      // param and redirect to index.html, which then restores it.
+      var l = window.location
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1).join('/') +
+        '/?p=' + encodeURIComponent(l.pathname + l.search) +
+        (l.hash ? '&h=' + encodeURIComponent(l.hash) : '')
+      )
+    </script>
+  </head>
+  <body></body>
+</html>
