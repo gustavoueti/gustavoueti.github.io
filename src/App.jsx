@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header/Header.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import { useTheme } from './hooks/useTheme.js'
@@ -12,7 +12,7 @@ export default function App() {
   const { theme, setTheme } = useTheme()
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Header theme={theme} setTheme={setTheme} />
       <main style={{ flex: 1, paddingBlock: 'var(--spacing-lg)' }}>
         <Suspense>
@@ -24,6 +24,6 @@ export default function App() {
         </Suspense>
       </main>
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   )
 }

@@ -1,12 +1,18 @@
+import SEO from '../../components/SEO/SEO.jsx'
 import capybara from '../../assets/capybara.png'
 import styles from './About.module.css'
 
 export default function About() {
   return (
     <div className="container">
+      <SEO
+        title="About"
+        description="Hey, I'm Ueti — a data engineer with 5+ years of experience writing about pipelines, data, and the things he picks up along the way."
+        url="/about"
+      />
       <div className={styles.page}>
         <div className={styles.hero}>
-          <img src={capybara} alt="Capybara mascot" className={styles.mascot} />
+          <img src={capybara} alt="Capybara mascot" className={styles.mascot} loading="lazy" />
           <div>
             <h1>Hey, I'm Ueti</h1>
             <p className={styles.tagline}>Data Engineer · Powered by coffee</p>

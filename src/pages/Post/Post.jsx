@@ -4,6 +4,7 @@ import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 import { usePost } from '../../hooks/usePosts'
 import { formatDate } from '../../utils/formatDate'
+import SEO from '../../components/SEO/SEO.jsx'
 import styles from './Post.module.css'
 
 export default function Post() {
@@ -31,6 +32,13 @@ export default function Post() {
 
   return (
     <div className="container">
+      <SEO
+        title={post.title}
+        description={post.excerpt}
+        type="article"
+        url={`/post/${post.slug}`}
+        article={{ publishedTime: post.date, tags: post.tags }}
+      />
       <Link to="/" className={styles.back}>
         ← All posts
       </Link>

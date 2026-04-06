@@ -1,5 +1,6 @@
 import { usePosts } from '../../hooks/usePosts'
 import PostCard from '../../components/PostCard/PostCard.jsx'
+import SEO from '../../components/SEO/SEO.jsx'
 import capyNotebook from '../../assets/capybara-notebook-stars.png'
 import styles from './Home.module.css'
 
@@ -8,6 +9,7 @@ export default function Home() {
 
   return (
     <>
+      <SEO url="/" />
       <section className={styles.hero}>
         <div className={`container ${styles.heroInner}`}>
           <div className={styles.heroText}>
@@ -21,6 +23,7 @@ export default function Home() {
             src={capyNotebook}
             alt="Capivara estudando com um notebook sob as estrelas"
             className={styles.heroImage}
+            loading="eager"
           />
         </div>
       </section>
